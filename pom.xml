@@ -15,4 +15,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>ArchivaServer</id>
+      <name>maven to ArchivaServer</name>
+      <url>http://192.168.10.103:8080/repository/internal</url>
+    </repository>
+
+    <snapshotRepository>
+      <id>ArchivaServer</id>
+      <name>maven to ArchivaServer Snapshot</name>
+      <url>http://192.168.10.103:8080/repository/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
