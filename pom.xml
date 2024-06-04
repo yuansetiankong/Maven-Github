@@ -15,7 +15,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>NexusServer</name>
+      <url>http://192.168.10.103:8081/repository/johnlee_maven_group/</url>
+    </repository>
+    
     <repository>
       <id>ArchivaServer</id>
       <name>maven to ArchivaServer</name>
@@ -27,5 +34,7 @@
       <name>maven to ArchivaServer Snapshot</name>
       <url>http://192.168.10.103:8080/repository/snapshots</url>
     </snapshotRepository>
+
+
   </distributionManagement>
 </project>
